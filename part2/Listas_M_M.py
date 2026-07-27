@@ -380,7 +380,138 @@ print("menor alfabeticamente: ", mayor)
 
 """ 
 
+"""
+Leer 5 nombres y mostrar el nombre más corto.
+
+nombre = ["ana", "alejandra", "valentina", "andres", "sara"]
+mayor = nombre[0]
+menor = 0
+
+for x in range (5):
+    
+    if len(nombre[x]) < len(mayor):
+        mayor = nombre[x]
+
+print(nombre)
+print("nombre menor: ", mayor)
+
+"""
+
+"""
+Leer 5 nombres y mostrar el nombre más largo.    
+
+nombre = ["ana", "alex", "valentina", "andres", "sara"]
+mayor = nombre[0]
+menor = 0
+
+for x in range (5):
+    
+    if len(nombre[x]) > len(mayor):
+        mayor = nombre[x]
+
+print(nombre)
+print("nombre menor: ", mayor)
+
+"""
+
+"""
+Leer 5 nombres y decir cuántos empiezan por la letra A.
+
+nombre = ["ana", "alex", "valentina", "andres", "sara"]
+cuenta = 0
+
+for x in range (5):
+    
+    if nombre[x][0] == "a":
+        cuenta += 1
         
+print(nombre)
+print("empeizan por la A: ", cuenta)
+
+"""
+
+"""
+Leer 5 nombres y mostrar cuál tiene más vocales.
+   
+nombre = ["ana", "alex", "valentina", "andres", "sara"]
+no = nombre[0]
+mayor = 0
+
+for x in range(5):
+    cantidad = 0
+    for letra in nombre[x]:
+
+        if letra == "a" or letra == "e" or letra == "i" or letra == "o" or letra == "u":
+            cantidad += 1
+    if cantidad > mayor:
+        mayor = cantidad
+        no = nombre[x]
+
+print(nombre)
+print("Nombre:", no)
+print("Vocales:", mayor)    
+    
+"""
+
+"""
+Leer 10 números e informar:
+Lista completa.
+Mayor.
+Menor.
+Cuántas veces aparece el mayor.
+Cuántas veces aparece el menor.
+Posición del mayor.
+Posición del menor.
+Suma de todos los números.
+Promedio.
+
+lista = [2, 3, 4, 2, 10, 10 ,10 ,5 , 6, 7]
+mayor = lista[0]
+menor = lista[0]
+listamayor = []
+listamenor = []
+mayorveces = 0
+menorveces = 0
+posicionmayor = 0
+posicionmenor = 0
+suma= 0
+promedio = 0
+
+for x in range (10):
+    
+    if lista[x] > mayor:
+        mayor = lista[x]
+        posicionmayor = x
+    if lista[x] < menor: 
+        menor = lista[x]
+        posicionmenor = x
+    
+for x in range (10):
+    
+    if lista[x] == mayor:
+        listamayor.append(x)
+    if lista[x] == menor:
+        listamenor.append(x)
+
+for x in range (10):
+    
+    suma += lista[x]
+    
+promedio = suma / 10
+
+print(lista)
+print("Numero mayor: ", mayor)
+print("Numero menor: ", menor)
+print("Posicion de los mayores: ", listamayor)
+print("posicion de los menores: ", listamenor)
+print("posicion del mayor: ", posicionmayor)
+print("posicion del menor: ", posicionmenor)
+print("la suma de los numeros: ", suma)
+print("Promedio de los numeros: ", promedio)
+
+"""
+
+
 
 
         
