@@ -65,4 +65,79 @@ print("El empleado con mayor ingreso es: ", mayorn, " con el sueldo: ", mayors)
 
 """
 
+"""
+Solicitar por teclado dos enteros. El primer valor indica la cantidad de elementos que crearemos en la lista. El segundo valor indica la cantidad de elementos que tendrá cada una de las listas internas a la lista principal.
+Mostrar la lista y la suma de todos sus elementos.
+
+lista = []
+
+element = int(input("Ingresa cuantos elementos tendra la lista: "))
+subelemnt = int(input("Ingresa elementos que tendra la lista interna: "))
+
+for x in range (element):
+
+    lista.append([])
+
+    for k in range (subelemnt):
+
+        valor = int(input("Ingresa un valor: "))
+        lista[x].append(valor)
+
+print(lista)
+
+suma = 0
+
+for x in range (len(lista)):
+
+    for k in range (len(lista[x])):
+
+        suma += lista[x][k]
+
+print("La suma de estos valores es: ", suma)
+
+"""
+
+"""
+Definir dos listas de 3 elementos.
+La primer lista cada elemento es una sublista con el nombre del padre y la madre de una familia.
+La segunda lista está constituida por listas con los nombres de los hijos de cada familia. Puede haber familias sin hijos.
+Imprimir los nombres del padre, la madre y sus hijos.
+También imprimir solo el nombre del padre y la cantidad de hijos que tiene dicho padre.
+
+
+padres = []
+hijos = []
+
+for x in range (3):
+
+    pa = input("Ingresa el nombre del padre: ")
+    ma = input("Ingresa el nombre de la madre: ")
+    padres.append([pa, ma])
+    cuanto = int(input("Ingresa cuantos hijos tiene la familia: "))
+    hijos.append([])
+
+    for y in range (cuanto):
+
+        hijo = input("Ingresa el nombre del hijo: ")
+        hijos[x].append(hijo)
+
+print()
+
+for x in range (3):
+
+    print("Padre: ", padres[x][0], " y ", "Madre: ", padres[x][1])
+
+    for y in range (len(hijos[x])):
+
+        print("Hijos: ", hijos[x][y])
+
+print()
+
+for x in range (3):
+
+    print("Padre: ", padres[x][0])
+    print("Hijos: ", len(hijos[x]))
+
+"""
+
 
