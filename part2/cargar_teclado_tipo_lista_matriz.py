@@ -140,4 +140,130 @@ for x in range (3):
 
 """
 
+"""
+Se desea saber la temperatura media trimestral de cuatro paises. Para ello se tiene como dato las temperaturas medias mensuales de dichos paises.
+Se debe ingresar el nombre del país y seguidamente las tres temperaturas medias mensuales.
+Seleccionar las estructuras de datos adecuadas para el almacenamiento de los datos en memoria.
+a - Cargar por teclado los nombres de los paises y las temperaturas medias mensuales.
+b - Imprimir los nombres de las paises y las temperaturas medias mensuales de las mismas.
+c - Calcular la temperatura media trimestral de cada país.
+c - Imprimir los nombres de los paises y las temperaturas medias trimestrales.
+b - Imprimir el nombre del pais con la temperatura media trimestral mayor.
+
+paises = []
+temperaturas = []
+
+for x in range (4):
+
+    p = input("Ingresa el nombre del pais: ")
+    paises.append(p)
+    temperaturas.append([])
+
+    for y in range (3):
+        tem1 = int(input("Ingresa la tempetura  mes: "))
+        temperaturas[x].append(tem1)
+        
+print("\n Paises y sus temperaturas mensuales: \n")
+
+for x in range (4):
+
+    print("\n Pais: ", paises[x])
+
+    for y in range (len(temperaturas[x])):
+
+        print("Temperaturas: ", temperaturas[x][y])
+
+for x in range (4):
+
+    suma = 0
+    promedio = 0
+    mayor = 0
+    pais = paises[0]
+
+    for y in range (len(temperaturas[x])):
+
+        suma += temperaturas[x][y]
+
+    promedio = suma / 3
+
+    print ("\n Pais ", paises[x])
+    print("Promedio de temperaturas: ", promedio)
+
+    if promedio > mayor:
+        mayor = promedio
+        pais = paises[x]
+
+print("\n Pais ", pais)
+print("Mayor temperatura trimestral del promedio: ", mayor)
+
+"""
+
+"""
+Definir una lista y almacenar los nombres de 3 empleados.
+Por otro lado definir otra lista y almacenar en cada elemento una sublista con los números de días del mes que el empleado faltó.
+Imprimir los nombres de empleados y los días que faltó.
+Mostrar los empleados con la cantidad de inasistencias.
+Finalmente mostrar el nombre o los nombres de empleados que faltaron menos días.
+
+
+empleados = []
+faltas = []
+
+for x in range (3):
+
+    e = input("\n Ingresa el nombre del empleado: ")
+    empleados.append(e)
+    c = int(input("Ingresa la cantidad dias que el empleado falto: "))
+    faltas.append([])
+
+    for y in range (c):
+
+        dia = int(input("Ingrese los dias que falto: "))
+        faltas[x].append(dia)
+
+for x in range (3):
+
+    print("\n Nombre del empleado: ", empleados[x])
+
+    for y in range (len(faltas[x])):
+
+        print("Dias que falto el empleado: ", faltas[x][y])
+
+for x in range (3):
+
+    cantidad = 0
+
+    cantidad += len(faltas[x])
+
+    print("\n Empleado: ", empleados[x])
+    print("Cantidad de faltas: ", cantidad)
+
+    if cantidad < 2: 
+        print("Empleado que falto menos de dos dias: ", empleados[x])
+
+"""
+
+"""
+Desarrollar un programa que cree una lista de 50 elementos. 
+El primer elemento es una lista con un elemento entero, el segundo elemento es una lista de dos elementos etc.
+
+lista = []
+cantidad = 1
+
+for x in range (50):
+
+    lista.append([])
+    valor = 1
+
+    for y in range (cantidad):
+
+        lista[x].append(valor)
+        valor += 1
+        
+    cantidad +=1
+
+print(lista)
+
+"""
+
 
