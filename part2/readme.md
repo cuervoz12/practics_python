@@ -18,4 +18,13 @@
 - end en print(): end indica qué debe colocar print() al finalizar. Por defecto, print() utiliza un salto de línea (\n). Si usamos end="", evitamos el salto de línea.
 
 - sep en print(): sep significa separador. Indica qué se coloca entre los diferentes valores que pasamos a print().
+
+- Funciones con cantidad variable de parámetros: Sirven cuando no sabes cuántos argumentos vas a recibir, El * se usa antes del nombre del parámetro para decirle a Python: “acepta cualquier cantidad de valores”. 
+
+def sumar(*numeros):
+
+    print(numeros)
+
+- Una tupla es una colección de varios valores, parecida a una lista, pero que no se puede modificar después de crearla.
+
 ```
