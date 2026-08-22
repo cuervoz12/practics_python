@@ -13,4 +13,6 @@ print(tupla)
 
 - return sirve para devolver un valor desde una función. Si después de return ponemos varios valores separados por comas, Python los devuelve como una tupla. Si usamos corchetes [], estamos devolviendo una lista.
 
+- Existen dos forma de recorrer listas o tuplas de la forma tradicional la que siempre hemos hecho la cual se utiliza cuando vamos a modificar elementos y la segunda forma que se usa sin indicar subindices 
+
 ```
