@@ -15,4 +15,6 @@ print(tupla)
 
 - Existen dos forma de recorrer listas o tuplas de la forma tradicional la que siempre hemos hecho la cual se utiliza cuando vamos a modificar elementos y la segunda forma que se usa sin indicar subindices 
 
+-Un diccionario está formado por claves (key) y valores (value), y esos valores pueden ser de cualquier tipo, incluso listas, tuplas u otros diccionarios.  Un diccionario puede contener listas, tuplas y otros diccionarios como valores. Esto permite representar información más compleja y organizar datos relacionados dentro de una misma estructura.
+
 ```
