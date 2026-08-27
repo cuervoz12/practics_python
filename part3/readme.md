@@ -17,4 +17,10 @@ print(tupla)
 
 -Un diccionario está formado por claves (key) y valores (value), y esos valores pueden ser de cualquier tipo, incluso listas, tuplas u otros diccionarios.  Un diccionario puede contener listas, tuplas y otros diccionarios como valores. Esto permite representar información más compleja y organizar datos relacionados dentro de una misma estructura.
 
+- Una porción de una lista, tupla o cadena de caracteres en Python es una parte de esa secuencia que se puede obtener utilizando índices. Se realiza mediante la sintaxis [inicio:fin:paso], donde el inicio indica desde dónde comenzar, el fin indica hasta dónde tomar los elementos sin incluir esa posición y el paso indica cuánto avanzar.
+Para recuperar una "porción" o trozo de una lista debemos indicar en el subíndice dos valores separados por el caracter ":".
+Del lado izquierdo indicamos a partir de que elementos queremos recuperar y del lado derecho hasta cual posición sin incluir dicho valor.
+
+- podemos utilizar un valor negativo para acceder a un elemento de la estructura de datos como tuplas o listas.
+En Python podemos acceder fácilmente al último elemento de la secuencia indicando un subíndice -1 y asi con los otros.
 ```
