@@ -28,5 +28,25 @@ En Python podemos acceder fácilmente al último elemento de la secuencia indica
 + randint() permite generar un número entero aleatorio dentro de un rango determinado, incluyendo tanto el valor inicial como el final. Por ejemplo, random.randint(1, 10) puede generar cualquier número entre 1 y 10.
 + shuffle() sirve para mezclar aleatoriamente los elementos de una lista, cambiando su orden. Por ejemplo, random.shuffle(lista) reorganiza los elementos de lista de manera aleatoria.
 
+- math: de Python contiene funciones y herramientas para realizar operaciones matemáticas de manera sencilla. Permite trabajar con raíces, potencias, números aleatorios, funciones trigonométricas, redondeos y constantes matemáticas.
++ sqrt(): calcula la raíz cuadrada de un número.
++ pow(): calcula una potencia. Recibe el número base y el exponente.
++ factorial(): es una función de la biblioteca math que calcula el factorial de un número.
+
+- Definición de alias para una funcionalidad: Podemos definir un nombre distinto para una funcionalidad que importamos de otro módulo. Esto puede tener como objetivo que nuestro programa sea más legible o evitar que un nombre de función que importamos colisione con un nombre de función de nuestro propio módulo.
++ Como vemos para definir un alias a una funcionalidad que importamos de un módulo debemos disponer la palabra clave as seguida del nuevo nombre: (from math import sqrt as raiz, pow as elevar)
++ Luego para utilizar la funcionalidad que importamos debemos hacerlo mediante el alias y no con el nombre definido en el módulo que importamos: (r1=raiz(valor), r2=elevar(valor,3))
+
+
+- Conceptos de programación orientada a objetos: 
+
+Conceptos básicos de Objetos:
+Un objeto es una entidad independiente con sus propios datos y programación. Las ventanas, menúes, carpetas de archivos pueden ser identificados como objetos; el motor de un auto también es considerado un objeto, en este caso, sus datos (atributos) describen sus características físicas y su programación (métodos) describen el funcionamiento interno y su interrelación con otras partes del automóvil (también objetos).
+
+El concepto renovador de la tecnología de Orientación a Objetos es la suma de funciones a elementos de datos, a esta unión se le llama encapsulamiento.
+Por ejemplo, un objeto Auto contiene ruedas, motor, velocidad, color, etc, llamados atributos. Encapsulados con estos datos se encuentran los métodos para arrancar, detenerse, dobla, frenar etc.
+La responsabilidad de un objeto auto consiste en realizar las acciones apropiadas y mantener actualizados sus datos internos.
+Cuando otra parte del programa (otros objetos) necesitan que el auto realice alguna de estas tareas (por ejemplo, arrancar) le envía un mensaje. A estos objetos que envían mensajes no les interesa la manera en que el objeto auto lleva a cabo sus tareas ni las estructuras de datos que maneja, por ello, están ocultos.
+Entonces, un objeto contiene información pública, lo que necesitan los otros objetos para interactuar con él e información privada, interna, lo que necesita el objeto para operar y que es irrelevante para los otros objetos de la aplicación.
 
 ```
