@@ -23,4 +23,10 @@ Del lado izquierdo indicamos a partir de que elementos queremos recuperar y del 
 
 - podemos utilizar un valor negativo para acceder a un elemento de la estructura de datos como tuplas o listas.
 En Python podemos acceder fácilmente al último elemento de la secuencia indicando un subíndice -1 y asi con los otros.
+
+- La biblioteca random de Python permite generar valores y realizar selecciones de forma aleatoria. Es útil para juegos, simulaciones, ejercicios y programas donde se necesite obtener resultados al azar.
++ randint() permite generar un número entero aleatorio dentro de un rango determinado, incluyendo tanto el valor inicial como el final. Por ejemplo, random.randint(1, 10) puede generar cualquier número entre 1 y 10.
++ shuffle() sirve para mezclar aleatoriamente los elementos de una lista, cambiando su orden. Por ejemplo, random.shuffle(lista) reorganiza los elementos de lista de manera aleatoria.
+
+
 ```
