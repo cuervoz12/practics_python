@@ -49,4 +49,17 @@ La responsabilidad de un objeto auto consiste en realizar las acciones apropiada
 Cuando otra parte del programa (otros objetos) necesitan que el auto realice alguna de estas tareas (por ejemplo, arrancar) le envía un mensaje. A estos objetos que envían mensajes no les interesa la manera en que el objeto auto lleva a cabo sus tareas ni las estructuras de datos que maneja, por ello, están ocultos.
 Entonces, un objeto contiene información pública, lo que necesitan los otros objetos para interactuar con él e información privada, interna, lo que necesita el objeto para operar y que es irrelevante para los otros objetos de la aplicación.
 
+- El método __init__ es un método especial de una clase en Python. El objetivo fundamental del método __init__ es inicializar los atributos del objeto que creamos.
+Básicamente el método __init__ remplaza al método inicializar
+Las ventajas de implementar el método __init__ en lugar del método inicializar son:
++ El método __init__ es el primer método que se ejecuta cuando se crea un objeto.
++ El método __init__ se llama automáticamente. Es decir es imposible de olvidarse de llamarlo ya que se llamará automáticamente.
++ Quien utiliza POO en Python (Programación Orientada a Objetos) conoce el objetivo de este método.
+Otras características del método __init__ son:
++ Se ejecuta inmediatamente luego de crear un objeto.
++ El método __init__ no puede retornar dato.
++ el método __init__ puede recibir parámetros que se utilizan normalmente para inicializar atributos.
++ El método __init__ es un método opcional, de todos modos es muy común declararlo.
+
+
 ```

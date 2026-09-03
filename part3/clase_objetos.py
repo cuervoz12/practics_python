@@ -59,4 +59,74 @@ alumno2.mostrar_estado ()
 
 """
 
+"""
+Confeccionar una clase que permita carga el nombre y la edad de una persona. Mostrar los datos cargados. Imprimir un mensaje si es mayor de edad (edad>=18)
+
+class Persona:
+
+    def iniciar (self, nombre, edad):
+
+        self.nombre = nombre
+        self.edad = edad
+
+    def mayor (self):
+
+        if self.edad >= 18:
+            print(self.nombre, " Es mayor de edad")
+        else:
+            print(self.nombre, "No es mayor de edad")
+
+persona1 = Persona ()
+persona1.iniciar ("Camila", 15)
+persona1.mayor ()
+
+persona2 = Persona ()
+persona2.iniciar ("Juan", 20)
+persona2.mayor ()
+
+"""
+
+"""
+Desarrollar un programa que cargue los lados de un triángulo e implemente los siguientes métodos: inicializar los atributos, imprimir el valor del lado mayor y otro método que muestre si es equilátero o no. El nombre de la clase llamarla Triangulo.
+
+class Triangulo:
+
+    def inicializar (self, lado1, lado2, lado3):
+
+        self.lado1 = lado1
+        self.lado2 = lado2
+        self.lado3 = lado3
+
+    def mayor (self):
+
+        if self.lado1 > self.lado2 and self.lado1 > self.lado3:
+            print("El lado 1 es mayor")
+        elif self.lado2 > self.lado1 and self.lado2 > self.lado3:
+            print("El lado 2 es mayor")
+        elif self.lado3 > self.lado1 and self.lado3 > self.lado2:
+            print("El lado 3 es mayor")
+        else:
+            print("Los lados son iguales")
+
+    def equilatero (self):
+
+        if self.lado1 == self.lado2 and self.lado1 == self.lado3 and self.lado2 == self.lado3:
+            print("El triangulo es equilatero")
+        else:
+            print("EL triangulo no es equilatero")
+
+triangulo1 = Triangulo ()
+triangulo1.inicializar (1, 2, 3)
+triangulo1.mayor ()
+triangulo1.equilatero ()
+
+triangulo2 = Triangulo ()
+triangulo2.inicializar (2, 2, 2)
+triangulo2.mayor ()
+triangulo2.equilatero ()
+
+"""
+
+
+
 
