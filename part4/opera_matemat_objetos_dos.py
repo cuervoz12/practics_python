@@ -123,6 +123,8 @@ if rectangulo1==rectangulo2:
 else:
     print("Los rectangulos no tienen la misma superficie")
     
+
+    
 """
 
 
